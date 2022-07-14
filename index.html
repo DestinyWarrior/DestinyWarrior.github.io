@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sketch</title>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script src="libraries/p5.min.js"></script>
+  <script src="libraries/p5.sound.min.js"></script>
+</head>
+
+<body>
+  <nav>
+    <h1>PathFinder</h1>
+    <button id="clearBoard">Clear Board</button>
+    <input type="radio" id="draw" name="mode" value="1" checked>
+    <label for="draw">Draw</label>
+    <input type="radio" id="erase" name="mode" value="0">
+    <label for="erase">Erase</label>
+    <button id="GenerateButton">Generate Maze</button>
+    <button id="startGame">Game Of Life</button>
+    <button id="getNode">Randomize Start and End</button>
+    <select name="solveMethod" id="solveMethod">
+      <option value="0">Breath First Search</option>
+      <option value="1">Best First Search</option>
+    </select>
+    <button id="solveButton">Solve</button>
+    <input type="range" min="10" max="100" step="1" id="cellWidth">
+    <label for="cellWidth">Cell Width</label>
+  </nav>
+  <main id="main">
+    <!-- <script src="thinBoundarys.js"></script> -->
+
+  </main>
+
+</body>
+<script src="solve.js" defer></script>
+<script src="CellObject.js" defer></script>
+<script src="thinBoundarys.js" defer></script>
+<script src="drawing.js" defer></script>
+<script src="canvas.js" defer></script>
+<script src="gameOfLife.js" defer></script>
+<script src="buttons.js" defer></script>
+
+
+</html>
